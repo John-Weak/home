@@ -15,13 +15,14 @@ export default defineNuxtConfig({
   meta: {
     meta: [
       { name: "title", content: "John-Weak" },
-      { name: "description", content: "hit me up @tusharbali on twitter" },
+      { name: "description", content: "Tushar Bali's personal profile" },
+      { name: "author", content: "Tushar Bali/John-Weak" },
       //Open Graph/Facebook
       { property: "og:url", content: "https://johnweak.dev" },
       { property: "og:title", content: "John-Weak" },
       {
         property: "og:description",
-        content: "hit me up @tusharbali on twitter",
+        content: "Tushar Bali's personal profile",
       },
       {
         property: "og:image",
@@ -32,7 +33,7 @@ export default defineNuxtConfig({
       { property: "twitter:title", content: "John-Weak" },
       {
         property: "twitter:description",
-        content: "hit me up @tusharbali on twitter",
+        content: "Tushar Bali's personal profile",
       },
       {
         property: "twitter:image",

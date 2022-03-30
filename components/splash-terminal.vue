@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen text-white bg-zinc-900 font-mono text-xs md:text-base">
+  <div class="h-screen text-white bg-black font-mono text-xs md:text-base">
     <pre class="term text-lg md:text-2xl flex" v-if="!hide">
       <div class="text-red-500">{{ machineName }}</div>
       <div class="text-yellow-400">:</div>
@@ -9,7 +9,7 @@
     </pre>
     <div class="pt-60 text-center term text-lg md:text-2xl" v-if="hide">Hello Friend</div>
     <div
-      class="text-white bg-zinc-900 overflow-y-auto overflow-x-hidden"
+      class="text-white bg-black overflow-y-auto overflow-x-hidden"
       v-for="(item, index) in spam"
       :key="index"
     >

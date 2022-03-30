@@ -1,14 +1,12 @@
 <template>
-    <div :class="theme ? 'dark' : ''" class="bg-neutral-900">
+    <div :class="theme ? 'dark' : ''" class="bg-stone-900">
         <SplashTerminal v-if="showTerminalAnimation" />
-
         <div :class="showTerminalAnimation ? 'hidden' : 'block '">
             <Header />
             <slot />
         </div>
     </div>
 </template>
-
 
 <script lang="ts" setup>
 const showTerminalAnimation = ref(true);
@@ -22,7 +20,5 @@ const theme = useCookie('theme', { default: () => 'dark' });
 onMounted(() => {
     splashAnimationTimer();
     theme.value = 'dark';
-    console.log(theme.value);
 })
-
 </script>

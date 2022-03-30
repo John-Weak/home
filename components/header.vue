@@ -1,6 +1,6 @@
 <template>
-    <div class="sticky w-screen flex justify-between items-center py-3 px-4">
-        <button class="text-3xl dark:text-lime-200 font-medium">RESUME</button>
+    <div class="sticky flex justify-between items-center py-3 px-4 bg-black">
+        <button class="text-2xl text-center font-mono md:text-3xl dark:text-lime-400">Resume</button>
         <ul class="flex">
             <li v-for="item in headerItems" :key="item.name">
                 <a :href="item.url" class="flex items-center justify-center">
@@ -8,7 +8,7 @@
                         :src="cookie === 'dark' ? item.darkIcon : item.lightIcon"
                         class="max-h-6 w-auto mr-2"
                     />
-                    <div class="dark:text-gray-100 mr-5">{{ item.name }}</div>
+                    <div class="dark:text-gray-300 mr-7 sm:mr-5 hidden sm:block">{{ item.name }}</div>
                 </a>
             </li>
         </ul>
