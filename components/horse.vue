@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <div class="🐎">🐎</div>
-    </div>
+    <div class="🐎 text-teal-300">🐎</div>
 </template>
 
 <style scoped>

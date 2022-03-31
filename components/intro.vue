@@ -1,8 +1,6 @@
 <template>
-    <div
-        class="dark:text-gray-100 flex items-center justify-center py-6 sm:flex-row flex-col-reverse"
-    >
-        <div class="sm:px-8 py-6 sm:0 text-center sm:text-left">
+    <div class="dark:text-gray-100 flex items-center justify-between sm:flex-row flex-col-reverse">
+        <div class="pt-6 text-center sm:text-left">
             <div class="mb-2">
                 <div class="text-4xl sm:text-5xl font-mono">
                     Hi,I am
@@ -22,7 +20,7 @@
         <img
             src="/images/haha_cat.jpg"
             alt="Haha Cat"
-            class="rounded-full h-52 md:h-72 sm:h-52 border-purple-300 border-4"
+            class="rounded-full h-52 md:h-64 sm:h-52 border-purple-300 border-4"
         />
     </div>
 </template>
