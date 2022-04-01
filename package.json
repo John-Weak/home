@@ -8,5 +8,9 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.0.2",
     "nuxt3": "latest"
+  },
+  "dependencies": {
+    "three": "0.134",
+    "troisjs": "^0.3.4"
   }
 }
