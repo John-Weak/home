@@ -9,25 +9,26 @@
                 <WorkIntro />
             </section>
 
-            <section class="sm:mt-6">
+            <section
+                class="flex justify-between sm:items-center flex-col sm:flex-row mt-6 max-w-full"
+            >
+                <Education />
                 <client-only>
-                    <Three class="h-96" />
+                    <Three class="hidden sm:block aspect-[1555/1080] w-64 mx-auto sm:w-1/2 h-auto" />
                 </client-only>
             </section>
 
-            <!--   <Catholic v-for="item in 3" class /> -->
-        </div>
-        <!--  <section>
-                
+            <Experience class="mt-10" />
+
+            <section class="flex justify-center items-center mt-10 max-w-full">
+                <Catholic class="sm:max-w-[50%]" />
+                <Catholic class="hidden sm:block max-w-[50%]" />
             </section>
-            <section>
-                
-        </section>-->
-        <!--  <div class="flex justify-center items-center">
-           
-        </div>-->
-        <!--   
-        -->
+
+            <section class="mt-10 justify-center items-center">
+                <Skills />
+            </section>
+        </div>
     </div>
 </template>
 

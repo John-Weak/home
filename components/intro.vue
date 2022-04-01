@@ -10,7 +10,7 @@
                 <div class="text-gray-300">(aka Tushar Bali)</div>
             </div>
             <div class="text-2xl sm:text-3xl text-gray-200">
-                Aspiring Full Stack Developer
+                <span class="text-emerald-200">Full Stack Developer</span>
                 <br />who enjoys
                 <span class="text-blue-200">Code Golfing</span>
                 <br />and

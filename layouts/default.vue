@@ -1,9 +1,10 @@
 <template>
     <div :class="theme ? 'dark' : ''" class="bg-stone-900">
         <SplashTerminal v-if="showTerminalAnimation" />
-        <div :class="showTerminalAnimation ? 'hidden' : 'block '">
+        <div :class="showTerminalAnimation ? 'hidden' : 'block '" class="flex flex-col">
             <Header />
             <slot />
+            <Footer class="mt-auto" />
         </div>
     </div>
 </template>
@@ -13,7 +14,7 @@ const showTerminalAnimation = ref(true);
 function splashAnimationTimer() {
     setTimeout(() => {
         showTerminalAnimation.value = false;
-    }, 1000 * 0);
+    }, 1000 * 6);
 }
 
 const theme = useCookie('theme', { default: () => 'dark' });

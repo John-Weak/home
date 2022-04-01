@@ -8,6 +8,11 @@ import {
     LambertMaterial,
     RendererPublicInterface,
     MeshPublicInterface,
+    PhongMaterial,
+    Texture,
+    AmbientLight,
+    SpotLight,
+    Plane
 } from 'troisjs';
 
 const rendererC = ref<RendererPublicInterface>()
@@ -20,21 +25,19 @@ onMounted(() => {
         box.value!.mesh.rotation.z += 0.01;
     })
 })
+//#1c1917
 </script>
 
 <template>
-    <Renderer resize="window" orbit-ctrl ref="rendererC">
-        <Camera :position="{ z: 10 }" />
-        <Scene background="#161616">
-            <PointLight :position="{ y: 50, z: 50 }" />
-            <Box :size="1" ref="box" :rotation="{ y: Math.PI / 4, z: Math.PI / 4 }">
-                <LambertMaterial />
+    <Renderer :orbit-ctrl="false" ref="rendererC" resize="window">
+        <Camera :position="{ z: 6 }" />
+        <Scene background="#1c1917">
+            <SpotLight :position="{ x: 20, z: 50 }" />
+            <Box :size="3" ref="box" :rotation="{ y: Math.PI / 4, x: Math.PI / 4, z: Math.PI / 4 }">
+                <PhongMaterial>
+                    <Texture src="/images/haha_cat.jpg" />
+                </PhongMaterial>
             </Box>
         </Scene>
     </Renderer>
 </template>
-
-
-
-
-
