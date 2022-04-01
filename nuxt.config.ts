@@ -4,6 +4,9 @@ import { resolve } from "pathe";
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   //ErrorPage: "error",
+  build: {
+    transpile: ["three", "troisjs"],
+  },
   alias: {
     "😺": ".",
     "😺/*": "./*",
