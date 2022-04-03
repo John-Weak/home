@@ -14,7 +14,7 @@ const showTerminalAnimation = ref(true);
 function splashAnimationTimer() {
     setTimeout(() => {
         showTerminalAnimation.value = false;
-    }, 1000 * 0);
+    }, 1000 * 6);
 }
 
 const theme = useCookie('theme', { default: () => 'dark' });
