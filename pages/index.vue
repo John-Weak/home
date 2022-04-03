@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col justify-center items-center w-full">
-        <div class="w-full 2xl:w-10/12 2xl:max-w-screen-lg sm:px-6 px-2">
+        <div class="w-full 2xl:max-w-screen-lg sm:px-6 px-2">
             <section class="mt-6">
                 <intro />
             </section>
@@ -14,7 +14,7 @@
             >
                 <Education />
                 <client-only>
-                    <Three class="hidden sm:block aspect-[1555/1080] w-64 mx-auto sm:w-1/2 h-auto" />
+                    <Three class="hidden sm:block h-96" />
                 </client-only>
             </section>
 

@@ -18,9 +18,9 @@
             </div>
         </div>
         <img
-            src="/images/haha_cat.jpg"
+            src="/images/pfp.jpg"
             alt="Haha Cat"
-            class="rounded-full h-52 md:h-64 sm:h-52 border-purple-300 border-4"
+            class="rounded-full h-52 w-52 md:h-64 md:w-64 border-purple-300 border-4"
         />
     </div>
 </template>
