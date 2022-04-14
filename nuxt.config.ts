@@ -20,6 +20,16 @@ export default defineNuxtConfig({
       { name: "title", content: "John-Weak" },
       { name: "description", content: "Tushar Bali's personal profile" },
       { name: "author", content: "Tushar Bali/John-Weak" },
+      {
+        name: "theme-color",
+        content: "#000000",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        name: "theme-color",
+        content: "#000000",
+        media: "(prefers-color-scheme: light)",
+      },
       //Open Graph/Facebook
       { property: "og:url", content: "https://johnweak.dev" },
       { property: "og:title", content: "John-Weak" },
