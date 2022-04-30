@@ -1,5 +1,5 @@
 <template>
-    <img :src="catImage" class="w-auto h-56 xl:h-64 2xl:h-96" />
+    <img :src="catImage" class="w-auto h-56 xl:h-64 2xl:h-72" />
 </template>
 
 <script setup lang="ts">

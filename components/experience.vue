@@ -3,16 +3,11 @@
         <div class="text-5xl sm:text-7xl dark:text-teal-300 font-medium sm:pb-2">Experience</div>
         <div v-for="item in data" :key="item.url" class="dark:text-gray-200 pt-6">
             <div class="text-xl sm:text-2xl font-medium dark:text-purple-200">{{ item.position }}</div>
-            <a
-                :href="item.url"
-                class="text-lg sm:text-xl font-normal underline underline-offset-2 dark:text-blue-200"
-            >{{ item.company }}</a>
+            <a :href="item.url" target="_blank" rel="noopener noreferrer"
+                class="text-lg sm:text-xl font-normal underline underline-offset-2 dark:text-blue-200">{{ item.company
+                }}</a>
             <div class="text-sm sm:text-base font-light dark:text-gray-400 pb-1">{{ item.time }}</div>
-            <ul
-                class="text-sm sm:text-base list-disc list-inside"
-                v-for="point in item.points"
-                :key="point"
-            >
+            <ul class="text-sm sm:text-base list-disc list-inside" v-for="point in item.points" :key="point">
                 <li class="py-1">{{ point }}</li>
             </ul>
         </div>

@@ -9,9 +9,7 @@
                 <WorkIntro />
             </section>
 
-            <section
-                class="flex justify-between sm:items-center flex-col sm:flex-row mt-6 max-w-full"
-            >
+            <section class="flex justify-between sm:items-center flex-col sm:flex-row mt-6 max-w-full">
                 <Education />
                 <client-only>
                     <Three class="hidden sm:block h-96" />
@@ -25,9 +23,15 @@
                 <Catholic class="hidden sm:block max-w-[50%]" />
             </section>
 
+            <section>
+                <Projects class="mt-10" />
+            </section>
+
             <section class="mt-10 justify-center items-center">
                 <Skills />
             </section>
+
+
         </div>
     </div>
 </template>

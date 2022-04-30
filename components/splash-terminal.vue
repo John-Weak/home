@@ -8,11 +8,8 @@
       <div>{{ firstText }}</div>
     </pre>
     <div class="pt-60 text-center term text-lg md:text-2xl" v-if="hide">Hello Friend</div>
-    <div
-      class="text-white bg-black overflow-y-auto overflow-x-hidden"
-      v-for="(item, index) in spam"
-      :key="index"
-    >
+    <div v-if="!hide" class="text-white bg-black overflow-y-auto overflow-x-hidden" v-for="(item, index) in spam"
+      :key="index">
       <span v-html="item"></span>
     </div>
   </div>
@@ -67,11 +64,9 @@ function spamMaster() {
       spam.value.push(`<br>Hello friend`);
       spam.value.push(`<br>`);
       setTimeout(() => {
-        window.scrollTo(0, document.body.scrollHeight);
-        //TODO:clear or exit
         hide.value = true;
+        window.scrollTo(0, 0);
         spam.value = [];
-        //firstText.value = "Hello Friend";
       }, 700);
     }
   }, time);
@@ -91,15 +86,19 @@ onMounted(initWrite);
   0% {
     opacity: 0;
   }
+
   40% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   90% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
