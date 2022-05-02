@@ -22,7 +22,7 @@ let hide = ref(false);
 let machineName = "johnweak@dev";
 let firstText = ref("");
 let text = "sh portfolio.sh";
-let speed = 10;
+let speed = 70;
 let i = 0;
 let spam = ref([""]);
 
@@ -35,9 +35,9 @@ function initWrite() {
       i = 0;
       setTimeout(() => {
         spamMaster();
-      }, 1000);
+      }, 100);
     }
-  }, Math.floor(Math.random() * 220) + speed);
+  }, Math.floor(Math.random() * 70) + speed);
 }
 
 let count = 0;
@@ -64,10 +64,10 @@ function spamMaster() {
       spam.value.push(`<br>Hello friend`);
       spam.value.push(`<br>`);
       setTimeout(() => {
-        hide.value = true;
         window.scrollTo(0, 0);
+        hide.value = true;
         spam.value = [];
-      }, 700);
+      }, 500);
     }
   }, time);
 }

@@ -28,8 +28,13 @@
             </section>
 
             <section class="mt-10 justify-center items-center">
+                <Contact />
+            </section>
+            
+            <section class="mt-10 justify-center items-center">
                 <Skills />
             </section>
+
 
 
         </div>

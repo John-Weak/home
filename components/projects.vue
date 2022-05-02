@@ -13,10 +13,12 @@
             </div>
             <div class="text-sm sm:text-base pt-1 ">{{ item.description }}</div>
             <div class="flex justify-center sm:block pt-4 ">
-                <iframe
-                    class="aspect-auto sm:aspect-video h-56 xl:h-64 2xl:h-72 border-slate-700 border-2 border-dashed "
-                    allowfullscreen="true" loading="lazy" :src="item.url" title="Particle Heart ❤️">
-                </iframe>
+                <client-only>
+                    <iframe
+                        class="aspect-auto sm:aspect-video h-56 xl:h-64 2xl:h-72 border-slate-700 border-2 border-dashed "
+                        allowfullscreen="true" loading="lazy" :src="item.url" title="Particle Heart ❤️">
+                    </iframe>
+                </client-only>
             </div>
         </div>
     </div>
