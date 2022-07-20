@@ -1,6 +1,17 @@
-# Nuxt 3 Minimal Starter
+# Home
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
+![image](https://user-images.githubusercontent.com/18065510/179949205-003d7a5f-9bf0-42f1-a33a-ae968a0aaf04.png)
+
+## [johnweak.dev](https://johnweak.dev/)
+
+## What is this?
+Personal portfolio website I built to establish my online presence.
+
+# Tech
+- Nuxt.js
+- TailWind CSS
+- Typescript
+
 
 ## Setup
 
@@ -25,5 +36,3 @@ Build the application for production:
 ```bash
 yarn build
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
