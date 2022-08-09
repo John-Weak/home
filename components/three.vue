@@ -29,9 +29,9 @@ onMounted(() => {
 </script>
 
 <template>
-    <Renderer :orbit-ctrl="false" ref="rendererC" resize="window">
+    <Renderer :orbit-ctrl="false" ref="rendererC" resize="window" :alpha="true">
         <Camera :position="{ z: 6 }" />
-        <Scene background="#1c1917">
+        <Scene>
             <SpotLight :position="{ x: 20, z: 50 }" />
             <Box :size="3" ref="box" :rotation="{ y: Math.PI / 4, x: Math.PI / 4, z: Math.PI / 4 }">
                 <PhongMaterial>

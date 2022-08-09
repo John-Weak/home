@@ -1,5 +1,5 @@
 <template>
-    <div :class="theme ? 'dark' : ''" class="bg-stone-900">
+    <div :class="theme ? 'dark' : ''" class="bg-gradient-to-r from-black via-neutral-900 to-black">
         <SplashTerminal v-if="showTerminalAnimation" />
         <div :class="showTerminalAnimation ? 'hidden' : 'block '" class="flex flex-col">
             <Header />

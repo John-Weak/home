@@ -13,7 +13,7 @@
                     >{{ title }}</div>
                 </div>
             </div>
-            <div class="relative flex bg-neutral-800 rounded-b-md">
+            <div class="abs flex bg-neutral-800 rounded-b-md">
                 <div
                     :key="lineNumbers"
                     class="sticky top-0 bottom-0 left-0 flex flex-col w-10 px-3 py-2 text-xs sm:text-base leading-loose text-right text-gray-600 select-none bg-zinc-900"
