@@ -3,7 +3,7 @@
         class="flex justify-center bg-black sticky top-0 z-20 bg-opacity-40 backdrop-filter backdrop-saturate-150 backdrop-blur-xl firefox:bg-opacity-100">
         <div class="w-full 2xl:w-10/12 2xl:max-w-screen-2xl mx-4">
             <div class="flex justify-between items-center py-3 ">
-                <a href="https://drive.google.com/file/d/1ld9m5fa0y__HESk8HFiJ9Cfi5Tf8nLqz/view" target="_blank"
+                <a href="https://drive.google.com/file/d/1OiGQC0s-88eSG6syx-8_HXRVjk49691k/view?usp=sharing" target="_blank"
                     rel="noopener noreferrer"
                     class="text-2xl text-center font-mono md:text-3xl dark:text-lime-400 sm:mr-52 md:mr-60 lg:mr-80">Resume</a>
                 <ul class="flex">
