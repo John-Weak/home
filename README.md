@@ -1,6 +1,6 @@
 # Home
 
-![image](https://user-images.githubusercontent.com/18065510/179949205-003d7a5f-9bf0-42f1-a33a-ae968a0aaf04.png)
+![image](https://user-images.githubusercontent.com/18065510/184412454-3216ffe1-3c8c-4231-b9d7-8af9573f77f5.png)
 
 ## [johnweak.dev](https://johnweak.dev/)
 
