@@ -16,26 +16,22 @@
                 </client-only>
             </section>
 
-            <Experience class="mt-10" />
-
-            <section class="flex justify-center items-center mt-10 max-w-full">
-                <Catholic class="sm:max-w-[50%]" />
-                <Catholic class="hidden sm:block max-w-[50%]" />
+            <section>
+                <Experience class="mt-10" />
             </section>
 
             <section>
                 <Projects class="mt-10" />
             </section>
 
-            <section class="mt-10 justify-center items-center">
+            <section class="flex justify-center items-center  max-w-full">
+                <Catholic class="sm:max-w-[50%]" />
+                <Catholic class="hidden sm:block max-w-[50%]" />
+            </section>
+
+            <section class="my-10 justify-center items-center">
                 <Contact />
             </section>
-            
-            <section class="mt-10 justify-center items-center">
-                <Skills />
-            </section>
-
-
 
         </div>
     </div>

@@ -1,18 +1,14 @@
 <script lang="ts" setup>
 import {
-    PointLight,
     Box,
     Camera,
     Renderer,
     Scene,
-    LambertMaterial,
     RendererPublicInterface,
     MeshPublicInterface,
     PhongMaterial,
     Texture,
     AmbientLight,
-    SpotLight,
-    Plane
 } from 'troisjs';
 
 const rendererC = ref<RendererPublicInterface>()
@@ -25,14 +21,14 @@ onMounted(() => {
         box.value!.mesh.rotation.z += 0.01;
     })
 })
-//#1c1917
 </script>
 
 <template>
-    <Renderer :orbit-ctrl="false" ref="rendererC" resize="window" :alpha="true">
+    <Renderer :orbit-ctrl="true" ref="rendererC" resize="window" :alpha="true">
         <Camera :position="{ z: 6 }" />
         <Scene>
-            <SpotLight :position="{ x: 20, z: 50 }" />
+            <AmbientLight :intensity="1" />
+            <!-- <DirectionalLight :position="{ x: 20, z: 50 }" :intensity="1" /> -->
             <Box :size="3" ref="box" :rotation="{ y: Math.PI / 4, x: Math.PI / 4, z: Math.PI / 4 }">
                 <PhongMaterial>
                     <Texture src="/images/haha_cat.jpg" />

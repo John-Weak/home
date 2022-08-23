@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "👽": resolve(__dirname, "assets"),
     "👽/*": resolve(__dirname, "assets/*"),
   },
+  css:['@/assets/main.css'],
   modules: ["@nuxtjs/tailwindcss"],
   messages: { error_404: "CAT NOT FOUND", loading: "JU JU" },
   meta: {
