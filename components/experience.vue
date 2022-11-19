@@ -16,8 +16,17 @@
 
 <script setup lang="ts">
 const data = [
-    {
+{
         position: 'Full Stack Developer',
+        company: 'Countly',
+        url: 'https://count.ly',
+        time: '19 Sep 2022 - Current',
+        points: [
+            "Part of Server Team, focusing on developing new features for plugins/maintaining existing plugins."
+        ]
+    },
+    {
+        position: 'Full Stack Developer - Freelance',
         company: 'Mister Policy',
         url: 'https://misterpolicy.com',
         time: '14 June 2021 - 20 Dec 2021',
