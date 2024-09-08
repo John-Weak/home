@@ -1,6 +1,11 @@
 <template>
     <div class="flex flex-col justify-center items-center w-full">
         <div class="w-full 2xl:max-w-screen-lg sm:px-6 px-2">
+
+            <section class="sm:mt-2 mt-4 pb-2">
+                <climate-clock/>
+            </section>
+
             <section class="mt-6">
                 <intro />
             </section>

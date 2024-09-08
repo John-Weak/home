@@ -3,6 +3,11 @@ import { resolve } from "pathe";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  vue: {  
+    compilerOptions: {
+      isCustomElement: (tag) => ['climate-clock'].includes(tag),
+    },
+  },
   //ErrorPage: "error",
   build: {
     transpile: ["three", "troisjs"],
@@ -17,6 +22,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   messages: { error_404: "CAT NOT FOUND", loading: "JU JU" },
   meta: {
+    title: "John-Weak",
     meta: [
       { name: "title", content: "John-Weak" },
       { name: "description", content: "Tushar Bali's personal profile" },
@@ -62,5 +68,8 @@ export default defineNuxtConfig({
         content: "tusharbali",
       },
     ],
+    script: [
+      { src: 'https://climateclock.world/widget-v2.js',async: true, defer: true }
+    ]
   },
 });
